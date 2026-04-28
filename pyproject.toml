@@ -120,7 +120,14 @@ testpaths = ["tests"]
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
+# Show extra test summary info for all except passed tests
+addopts = "-v --tb=short -ra"
 
 [tool.coverage.run]
 source = ["raganything"]
 omit = ["tests/*", "examples/*"]
+
+[tool.coverage.report]
+# Show lines missing coverage in the report
+show_missing = true
+fail_under = 60
