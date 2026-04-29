@@ -3,6 +3,10 @@
 This package provides tools for parsing, indexing, and querying documents
 containing text, images, tables, equations, and other modalities using
 Retrieval-Augmented Generation (RAG) techniques.
+
+Personal fork notes:
+- Forked from HKUDS/RAG-Anything for personal learning and experimentation
+- See README for original project documentation
 """
 
 from raganything.raganything import RAGAnything
