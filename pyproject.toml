@@ -130,5 +130,5 @@ omit = ["tests/*", "examples/*"]
 [tool.coverage.report]
 # Show lines missing coverage in the report
 show_missing = true
-# Lowered threshold from 60 to 50 while I'm still exploring the codebase
-fail_under = 50
+# Require at least 60% coverage to pass (raised from original incomplete threshold)
+fail_under = 60
